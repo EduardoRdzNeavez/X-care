@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TooltipModule } from 'ngx-bootstrap/tooltip';
 
 
 import { AppComponent } from './app.component';
@@ -9,7 +10,7 @@ import { AppComponent } from './app.component';
   declarations: [
     AppComponent
   ],
-  imports: [
+  imports: [ TooltipModule.forRoot(),
     BrowserModule
   ],
   providers: [],
