@@ -1,0 +1,9 @@
+//Hace una consulta para obtener el dia de la semana y hora mas aceptada segun la marca.
+{
+    "marca":"mark"
+}
+
+{
+    "dia_semana":"Mon",
+    "hora":"13:00"
+}

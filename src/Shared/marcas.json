@@ -1,0 +1,28 @@
+//hace una consulta en base a una marca el cual retorna la cantidad de clientes que visitaron esa marca
+//entre un rango de fechas y trae un listado de marcas (competencias) con la cantidad de clientes en comun
+//Inner Join
+{
+    "marca": "lowes",
+    "area": "algo",
+    "estado": "NJ",
+    "fecha_inicial": "1990/05/21",
+    "fecha_fianl": "1990/05/22"
+}
+
+{
+    "brand_visits": 1000,
+    "competencia": {
+        "marca1": {
+            "nombre":"test",
+            "visits": 10
+        },
+        "marca2": {
+            "nombre":"test",
+            "visits": 10
+        },
+        "marca3": {
+            "nombre":"test",
+            "visits": 10
+        }
+    }
+}

@@ -1,0 +1,35 @@
+//Hace una consulta para traer las diferentes marcas con las cantidades de visitas en orden descendiente
+//la brand con mas visitas es el market feeder
+//La consulta puede ser en base a el estado=1, area=2 o marca=3
+{
+    "tipo_busqueda":1,
+    "fecha_inicial":"2018/05/20",
+    "fecha_final":"2018/05/30"
+}
+
+{
+    //estructura json para la consulta 3
+    "brand":{
+        "brand1":{
+            "name":"temp",
+            "area":"temp_area",
+            "state":"temp_state",
+            "visits":10
+        }
+    },
+    //estructura json para la consulta 2
+    "area":{
+        "area1":{
+            "area":"temp_area",
+            "state":"temp_state",
+            "visits":10
+        }
+    },
+    //estructura json para la consulata 1
+    "state":{
+        "state":{
+            "state":"temp_state",
+            "visits":10
+        }
+    }
+}
