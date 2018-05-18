@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import {SearchService } from '../search.service';
+import { HttpModule } from '@angular/http';
+
 
 @Component({
   selector: 'app-competition',
@@ -7,9 +10,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CompetitionComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private httpmodule: HttpModule,
+    private dataService: SearchService) {
+    const Icustomer = [];
   }
 
+  ngOnInit() {
+    this.dataService.getData().subscribe(res => {
+
+    });
+  }
 }

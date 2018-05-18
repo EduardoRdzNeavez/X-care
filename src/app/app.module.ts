@@ -2,6 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { TooltipModule } from 'ngx-bootstrap/tooltip';
 import { RouterModule } from '@angular/router';
+import { FormsModule } from '@angular/forms';
+import { SearchService} from './search.service';
 
 
 import { AppComponent } from './app.component';
@@ -23,10 +25,10 @@ import { PredominantComponent } from './predominant/predominant.component';
         { path: 'Predominant', component: PredominantComponent },
         { path: 'Visit', component: VisitComponentComponent }
   ]),
-
+    FormsModule,
     BrowserModule,
   ],
-  providers: [],
+  providers: [ SearchService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
